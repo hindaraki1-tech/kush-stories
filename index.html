@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>قصص كوش — حكايات من أرض مروي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#FFF8F0; --card:#FFFFFF; --accent:#C77C2E; --muted:#7a5a3a; --sand:#EBD7B5;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--muted);margin:0;padding:0}
+    header{background:linear-gradient(90deg,var(--sand),#F7E8D2);padding:28px 16px;text-align:right}
+    .container{max-width:980px;margin:18px auto;padding:0 16px}
+    h1{margin:0;font-size:28px;color:#3a2b1f}
+    p.lead{margin:8px 0 0;color:#5b4633}
+    .hero{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+    .hero .cover{flex:1 1 260px;min-height:160px;background-image:url('https://upload.wikimedia.org/wikipedia/commons/1/14/Africa_in_400_BC.jpg');background-size:cover;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+    .hero .cta{flex:1 1 260px}
+    .btn{display:inline-block;background:var(--accent);color:white;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+    .card{background:var(--card);padding:12px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .card img{width:100%;border-radius:8px;height:140px;object-fit:cover}
+    .card h3{margin:10px 0 6px;font-size:16px}
+    .card p{margin:0;color:#6b5540;font-size:14px}
+    footer{margin-top:28px;padding:18px;text-align:center;color:#6b5540;font-size:14px}
+    .small{font-size:13px;color:#8a6f57}
+    /* responsive */
+    @media(max-width:560px){h1{font-size:22px}}
+
+    /* simple story preview box */
+    .story-preview{background:linear-gradient(180deg, #fff, #FFF7EE);padding:14px;border-radius:10px;margin-top:12px}
+    .controls{display:flex;gap:8px;align-items:center}
+    .controls button{padding:8px 12px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-weight:700}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="hero">
+        <div class="cta">
+          <h1>قصص كوش — حكايات من أرض مروي</h1>
+          <p class="lead">اكتشف تاريخنا مع قصص مصوّرة، ألعاب، وأناشيد قصيرة للأطفال. مناسب للأعمار 5–14 سنة.</p>
+          <p style="margin-top:12px"><a class="btn" href="#stories">ابدأ بالقصة الأولى</a></p>
+        </div>
+        <div class="cover" role="img" aria-label="خريطة كوش القديمة"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="stories">
+      <h2 style="margin-top:6px">قصص محبّبة</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/NubianMeroePyramids30sep2005%282%29.jpg" alt="أهرامات مروي">
+          <h3>أماني ريناس — بطلة كوش</h3>
+          <p>قصة قصيرة للأطفال عن شجاعة الملكة التي دافعت عن أرضها.</p>
+          <div class="story-preview">
+            <div class="small">عرض سريع للقصة</div>
+            <p style="margin:8px 0 6px">أماني ريناس قادت شعبها عندما اجتاز الرومان ضفاف النيل... </p>
+            <div class="controls">
+              <button id="play" aria-label="تشغيل القراءة">استمع</button>
+              <a class="small" href="stories/amanirenas.html">اقرأ القصة كاملة</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Africa_in_400_BC.jpg" alt="خريطة قديمة">
+          <h3>رحلة إلى مروي</h3>
+          <p>مغامرة صغيرة تتبع طفلًا يستكشف آثار مدينته.</p>
+        </article>
+
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Temple_of_Amun_Meroe.jpg/640px-Temple_of_Amun_Meroe.jpg" alt="معبد مروي">
+          <h3>يوم في سوق النوبة</h3>
+          <p>قصّة عن ألوان وأسواق وطقوس قديمة.</p>
+        </article>
+      </div>
+    </section>
+
+    <section style="margin-top:20px">
+      <h2>ألعاب وأنشطة</h2>
+      <div class="grid">
+        <div class="card"><h3>خريطة كنز تفاعلية</h3><p class="small">درس تفاعلي عن أماكن أثرية (قريبًا)</p></div>
+        <div class="card"><h3>بطاقات الشخصيات</h3><p class="small">اجمع بطاقات للشخصيات عند إكمال القصص</p></div>
+        <div class="card"><h3>تلوين</h3><p class="small">صفحات قابلة للطباعة لتلوين مشاهد من القصة</p></div>
+      </div>
+    </section>
+
+    <section style="margin-top:20px">
+      <h2>للمعلّمين</h2>
+      <p class="small">ملف موارد يحتوي على أوراق عمل قابلة للطباعة ودليل استخدام القصص في الفصل.</p>
+    </section>
+
+    <footer>
+      <div class="small">حقوق المحتوى: مواد مرخّصة من مصادر عامة أو للاستخدام التعليمي. لا تجمع بيانات شخصية للأطفال.</div>
+      <div style="margin-top:8px" class="small">نسخة أولية — يمكنك طلب قالب القصة أو رفعها إلى GitHub Pages وسأرشدك.</div>
+    </footer>
+  </main>
+
+  <script>
+    // Web Speech simple reader for the preview paragraph
+    const play = document.getElementById('play');
+    const previewText = "أماني ريناس قادت شعبها عندما اجتاز الرومان ضفاف النيل";
+    play.addEventListener('click', ()=>{
+      if(!('speechSynthesis' in window)){
+        alert('متصفحك لا يدعم قراءة النص صوتياً. جرّب متصفح حديث مثل Chrome أو Edge.');
+        return;
+      }
+      const msg = new SpeechSynthesisUtterance(previewText);
+      msg.lang = 'ar-SA';
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(msg);
+    });
+  </script>
+</body>
+</html>
